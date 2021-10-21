@@ -1,3 +1,6 @@
+//const bcrypt = require('bcryptjs');
+//const PASSWORD = bcrypt.hashSync(process.env.PASSWORD, 8);
+
 /**
  * Copyright 2013, 2016 IBM Corp.
  *
@@ -108,10 +111,7 @@ module.exports = {
             username: process.env.USERNAME,
             password: process.env.PASSWORD,
             permissions: "*"
-        }],
-        default: {
-            permissions: "read"
-        }
+        }]
     },
 
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
